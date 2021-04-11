@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#background
+	td{}
+
+	.cherry{
+
+		height:100px;
+		width:100px;
+		background-image: url(https://pngimg.com/uploads/cherry/cherry_PNG3071.png);
+		background-size:contain;
+		background-repeat: no-repeat;
+
+
+	}
+body{
+	background-image: url(https://images.fineartamerica.com/images-medium-large-5/ice-cream-in-sugar-cones-elena-elisseeva.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+
+}
+</style>	
+	<title></title>
+</head>
+
+<body>
+
+<table>
+	
+	<tr>
+		
+		<td> <div class="cherry" id=cherry1></div> </td>
+		<td> <div class="cherry" id=cherry2></div> </td>
+		<td> <div class="cherry" id=cherry3></div> </td>
+		<td> <div class="cherry" id=cherry4></div> </td>
+		<td> <div class="cherry" id=cherry5></div> </td>
+		<td> <div class="cherry" id=cherry6></div> </td>
+		<td> <div class="cherry" id=cherry7></div> </td>
+		<td> <div class="cherry" id=cherry8></div> </td>
+		<td> <div class="cherry" id=cherry9></div> </td>
+		<td> <div class="cherry" id=cherry10></div> </td>
+		<td> <div class="cherry" id=cherry11></div> </td>
+		<td> <div class="cherry" id=cherry12></div> </td>
+		<td> <div class="cherry" id=cherry13></div> </td>
+
+
+
+	</tr>
+</table>
+<script type="text/javascript">
+ 
+var cherry1 = document.getElementById("cherry1")
+
+   
+
+   cherry1.addEventListener(
+
+   	"click", function movecherry1(event){
+   		console.log("hi");
+   		document.addEventListener(
+   			"mousemove", function(event){
+	
+   		cherry1.style.position= "absolute";
+   		cherry1.style.left= event.clientX - 50 + "px";
+   		cherry1.style.top= event.clientY - 50 + "px";
+
+   	}
+
+   	)
+
+}
+)
+
+
+
+
+
+    document.addEventListener(
+   	"click", function(event){
+   		cherry1.removeEventListener ("click", movecherry1);
+
+   	}
+
+   	)
+</body>
+
+</html>
+
