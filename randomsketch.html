@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #picture {
+        width: 500px;
+        height: 500px;
+        transition:0.7s;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Which Community character are you?</h1>
+        <div id="picture"></div>
+        <script type="text/javascript">
+        var colors = ["url(https://pbs.twimg.com/profile_images/1279566064674844672/kzdA4Peg.jpg)",
+
+
+            "url(https://a1cf74336522e87f135f-2f21ace9a6cf0052456644b80fa06d4f.ssl.cf2.rackcdn.com/images/characters_opt/p-community-alison-brie.jpg)",
+
+
+            "url(http://oyster.ignimgs.com/mediawiki/apis.ign.com/community-tv/0/0b/Jeff-winger-picture_515x344.jpg)", 
+            
+            "url(https://pyxis.nymag.com/v1/imgs/e8e/230/d977bdd832499ce70b1fa4f93fed7016e3-24-community-troy.2x.h473.w710.jpg)", 
+            
+            "url(https://www.denofgeek.com/wp-content/uploads/2011/02/178053.jpg?resize=640%2C432)", 
+
+
+            "url(http://iwatchstuff.com/2014/10/01/shirley.jpg)",
+
+            "url(https://uproxx.com/wp-content/uploads/2015/07/dean-pelton-community.png?w=755)",
+
+             "url(https://i.pinimg.com/originals/e6/e9/b8/e6e9b8ba2420f8f06325a9f95d45dc84.png)",
+
+        ];
+var box = document.getElementById('picture');
+
+
+
+        box.addEventListener("click", function() {
+            var random = Math.floor(8 * Math.random());
+
+            console.log(colors[random])
+
+            box.style.backgroundImage = colors[random];
+        })
+        </script>
+    </center>
+</body>
+
+</html>
