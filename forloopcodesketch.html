@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	.cookie{
+
+		width: 200px;
+		height: 200px;
+		background-image:url(http://assets.stickpng.com/images/58661bba7d90850fc3ce2a6e.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 5px;
+		display: inline-block;
+		}
+		#title{width:1200px;
+	height:100px;
+	background-color: pink;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		font-size: 50px;
+		margin-left: 30px;
+		margin-right: 30px;}
+
+
+	</style>
+</head>
+<body>
+	<div id="title"> cupcake timer!</div>
+</body>
+<script type="text/javascript">
+	
+function makeCookie (input){
+
+	var cookie = document.createElement('div');
+	cookie.classList.add('cookie')
+	document.body.appendChild(cookie)
+
+}
+ setInterval(makeCookie, 1000) 
+
+for(var i=0; i<1; i = i+1) { makeCookie(
+	i)}
+
+</script>
+</html>
