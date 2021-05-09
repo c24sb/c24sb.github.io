@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+	.confetti{
+		width: 200px;
+		height: 140px;
+		background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCzgRIwXOMGPcCoS6e0Vxo2LP-S5m1m-4pTg&usqp=CAU);
+		background-size: contain;
+		background-repeat: no-repeat;
+		display: inline-block;
+		}
+		#title{width:1200px;
+	height:100px;
+	background-color: lightpink;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		font-size: 50px;
+		margin-left: 1px;
+		margin-right: 1px;}
+
+		#from{width:700px;
+	height:50px;
+	background-color: white;
+		text-align: left;
+		text-decoration: none;
+		color: pink;
+		font-size: 30px;
+		margin-left: 325px;
+		margin-right: 1px;}
+#letter{width:1000px;
+	height:40px;
+	background-color: white;
+	background-position: center;
+		text-align: right;
+		text-decoration: none;
+		color: lightpink;
+		font-size: 30px;
+		margin-left: 1px;
+		margin-right: 1px;}
+
+	</style>
+</head>
+<body>
+	<div id="title"> Happy Mother's Day Mom!</div>
+	<div id="letter"> I love you so much! Thank you for everything you do for me <3 </div>
+	<div id="from"> Love, Sadie</div>
+	
+</body>
+<script type="text/javascript">
+	
+function makeConfetti (input){
+
+	var confetti = document.createElement('div');
+	confetti.classList.add('confetti')
+	document.body.appendChild(confetti)
+
+}
+ setInterval(makeConfetti, 100) 
+
+for(var i=0; i<1; i = i+1) { makeConfetti(
+	i)}
+
+</script>
+</html>

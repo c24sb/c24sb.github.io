@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	.cherry{
+		height:100px;
+		width:100px;
+		background-image: url(https://pngimg.com/uploads/cherry/cherry_PNG3071.png);
+		background-size:contain;
+		background-repeat: no-repeat;
+		} 
+
+	<title></title>
+</style>
+</head>
+<body>
+	<div class="cherry"></div>
+
+	<script type="text/javascript">
+var counter = 0;
+
+	var cherry = document.getElementById('cherry');
+	cherry.addEventListener(
+		"click", function(){
+
+			counter = counter + 1;
+			console.log(counter)
+			console.log("i'm even!")
+
+		}
+
+		)
+  </script>
+</body>
+</html>
