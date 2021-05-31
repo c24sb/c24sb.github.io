@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+
+		background-color: lightpink;
+
+	}	p{
+font-family: courier;
+font-size: 50px
+		}
+		#picker{
+			font-family: courier;
+			font-size: 70px;
+			border:3px dotted black;
+			width: 600px;
+			height: 200px;
+			color:black;
+			margin-left: 30;
+		margin-right: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	
+
+<p> pick a codesketch!
+</p>
+<div id="picker"></div> 
+<p> now go to the projects page and find the link!!
+</p>
+<script type="text/javascript">
+	var array = [
+"cupcake generator",
+"mother's day card",
+"planet animation",
+"emoji clicker",
+"community characters",
+
+	];
+
+
+var box= document.getElementById("picker");
+box.addEventListener("click",
+	function(){
+var x = Math.round(Math.random()*4)
+box.innerText=array[x];
+}
+);
+
+function add (x,y){
+console.log (x+y)
+
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
